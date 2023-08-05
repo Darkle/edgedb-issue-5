@@ -7,11 +7,10 @@ let dbClient = EdgeDBClient(config)
 
 type Settings =
     { uniqueId: string
-      numberMediaDownloadsAtOnce: int
-      updateAllDay: bool }
+      baz: int
+      bar: bool }
 
-type Foo =
-    { uniqueId: string; updateAllDay: bool }
+type Foo = { uniqueId: string; thing: bool }
 
 [<EntryPoint>]
 let main _ =
